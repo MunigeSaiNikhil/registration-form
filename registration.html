@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONLINE CODEATHON Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      background-color: #007BFF;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>ONLINE CODEATHON</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="rollno">Roll No.:</label>
+      <input type="text" id="rollno" name="rollno" placeholder="Enter your roll number" required>
+
+      <label for="class">Class & Section:</label>
+      <input type="text" id="class" name="class" placeholder="e.g. B.Tech CSE - A" required>
+
+      <label for="college">College Name:</label>
+      <input type="text" id="college" name="college" placeholder="Enter your college name" required>
+
+      <label for="contact">Contact Number:</label>
+      <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" pattern="[0-9]{10}" required>
+
+      <label for="designation">Designation:</label>
+      <select id="designation" name="designation" required>
+        <option value="">--Select Designation--</option>
+        <option value="student">Student</option>
+        <option value="faculty">Faculty</option>
+        <option value="professional">Professional</option>
+        <option value="other">Other</option>
+      </select>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+</body>
+</html>
